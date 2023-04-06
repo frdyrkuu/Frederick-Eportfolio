@@ -1,0 +1,11 @@
+.dot-lines{
+    background-image: radial-gradient(circle at 2px 5px, rgb(86, 85, 85) 1.5px, transparent 0);
+    background-size: 60px 60px;
+
+}
+
+body{
+    background-image: radial-gradient(circle at 2px 5px, rgb(86, 85, 85) 1.5px, transparent 0);
+    background-size: 60px 60px;
+
+}
