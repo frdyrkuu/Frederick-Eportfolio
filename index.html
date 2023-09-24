@@ -8,7 +8,9 @@
 
   <!-- LINKS  -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="src/style.css">
   <link rel="stylesheet" href="dist/output.css">
 
@@ -18,17 +20,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </head>
 
-<body class="bg-black font-['Poppins'] antialiased">
+<body class="bg-[#f5efe6] font-['Poppins'] antialiased">
   <main>
     <!-- NAVIGATION HEADER FOR THE LANDING PAGE -->
     <header
-      class="bg-black transition-all duration-700 ease-out rounded-b-3xl sticky top-0 hidden-header z-50 bg-transparent">
+      class="bg-[#f5efe6] transition-all duration-700 ease-out rounded-b-3xl sticky top-0 hidden-header z-50 bg-transparent">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-6 z-0">
         <a href="/" class="flex items-center">
           <img src="images/fredericklogo.png" class="h-28 w-full mr-3" alt="Frederick Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-stone-900 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#2f374f] rounded-lg md:hidden hover:bg-stone-900 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -40,48 +42,63 @@
           <ul
             class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
+              <a href="#" class="block py-2 pl-3 pr-4 text-[#2f374f] rounded md:bg-transparent md:p-0 font-bold"
                 aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#skills" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0">Skills</a>
+              <a href="#skills"
+                class="block py-2 pl-3 pr-4 text-[#2f374f] rounded md:bg-transparent md:p-0 font-bold">Skills</a>
             </li>
             <li>
-              <a href="#projects" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0">Projects</a>
+              <a href="#projects"
+                class="block py-2 pl-3 pr-4 text-[#2f374f] rounded md:bg-transparent md:p-0 font-bold">Projects</a>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0">Contact</a>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-[#2f374f] rounded md:bg-transparent md:p-0 font-bold">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <div id="" class="wallpaper mb-40">
-      <section class="" id="landing">
-        <div class="flex flex-col-reverse justify-center lg:flex-row p-6 items-center h-screen -mt-32">
-          <div class="animate-reveal mt-44">
-            <img src="images/computer.png" alt="computer-image" class="animate-floating hidden sm:grid">
-          </div>
+    <div id="" class="wallpaper">
+      <section class="max-w-7xl mx-auto" id="landing">
+        <div class="flex flex-col justify-center lg:flex-row p-6 items-center">
 
-          <article class="sm:w-1/2 mt-10">
+
+          <article class="sm:w-1/2">
             <h2 class="text-2xl font-bold mt-20 text-center sm:text-left text-red-700 animate-reveal-x tracking-widest">
               Hello I am Frederick
             </h2>
             <br>
 
-            <h2 id="writer" class="text-6xl font-bold text-white text-center sm:text-left animate-reveal">
+            <h2 id="writer" class="text-6xl font-bold text-[#2f374f] text-center sm:text-left animate-reveal">
 
             </h2>
-            <h3 class="text-lg font-normal text-white text-center sm:text-left animate-reveal-x">
+            <h3 class="text-xl font-normal text-[#2f374f] text-center sm:text-left animate-reveal-x">
               <br>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, delectus sint at
               corrupti beatae quasi ut eos molestiae sequi.
             </h3>
 
-            <br>
+            <div class="flex justify-center sm:justify-start space-x-3 mt-6">
+              <div>
+                <i class="fab fa-github fa-2x" style="color: #b91c1c;"></i>
+              </div>
+              <div>
+                <i class="fab fa-linkedin fa-2x" style="color: #b91c1c;"></i>
+              </div>
+              <div>
+                <i class="fab fa-facebook fa-2x" style="color: #b91c1c;"></i>
+              </div>
+            </div>
 
+            <br>
           </article>
+          <div class="mt-20 w-1/2">
+            <img src="images/illustration.png" alt="computer-image" class="hidden md:grid">
+          </div>
         </div>
       </section>
     </div>
@@ -96,7 +113,8 @@
             <hr class="absolute h-0.5 w-10 bg-red-500 top-1/2 left-0 transform -translate-y-1/2">
             <h5 class="text-red-500 font-bold ml-14 text-xl">Skills</h5>
           </div>
-          <h1 class="text-white tracking-normal font-semibold text-2xl leading-snug sm:text-6xl">My Experienced Skills
+          <h1 class="text-[#2f374f] tracking-normal font-semibold text-2xl leading-snug sm:text-6xl">My Experienced
+            Skills
         </div>
         <div class="flex-wrap flex justify-center h-96 mt-10">
           <!-- Card 1 -->
@@ -240,8 +258,8 @@
     <hr class="mx-auto border-red-700 w-1/2 border-2 my-32" id="projects">
 
     <!-- PROJECT SECTION -->
-    <div class="bg-red-700 rounded-t-[100px]">
-      <section class="mx-auto xl:mt-10 mt-96 py-10">
+    <div class="bg-gradient-to-r from-[#032445] via-[#042b5b] to-[#4daaca] rounded-t-[50px] sm:rounded-t-[100px]">
+      <section class="mx-auto xl:mt-10 mt-72 py-10">
         <div class="px-10 sm:px-20 animate-reveal-x ">
           <div class="section-subheader-container relative">
             <hr class="absolute h-0.5 w-10 bg-white top-1/2 left-0 transform -translate-y-1/2">
@@ -252,59 +270,6 @@
         </div>
 
         <!-- CARDS -->
-        <div class="w-full mx-auto sm:w-2/3">
-          <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-3">
-            <!--Card 1-->
-            <div class="rounded overflow-hidden w-full">
-              <img class="w-full" src="images/burger-dungeon.png" alt="Mountain">
-              <div class="px-2 py-4 text-white">
-                <div class="font-bold text-xl mb-2">Burger Dungeon</div>
-                <p class="text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                  perferendis eaque, exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-                <a href="https://burger-dungeon.000webhostapp.com/" target="_blank">
-                  <button class="bg-stone-900 px-2 py-2 w-full rounded text-white font-semibold">Live Demo</button>
-                </a>
-              </div>
-            </div>
-            <!--Card 2-->
-            <div class="rounded overflow-hidden w-full ">
-              <img class="w-full" src="images/acs.png" alt="River">
-              <div class="px-2 py-4 text-white">
-                <div class="font-bold text-xl mb-2">ACS Protech</div>
-                <p class="text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                  perferendis eaque, exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-                <a href="https://acs-protech.com/"  target="_blank">
-                  <button class="bg-stone-900 px-2 py-2 w-full rounded text-white font-semibold">Live Demo</button>
-                </a>
-              </div>
-            </div>
-
-            <!--Card 3-->
-            <div class="rounded overflow-hidden w-full ">
-              <img class="w-full" src="images/3phase.png" alt="Forest">
-              <div class="px-2 py-4 text-white">
-                <div class="font-bold text-xl mb-2">Circuit Calculator</div>
-                <p class="text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                  perferendis eaque, exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-                <a href="https://faultcalculator.tech/" target="_blank">
-                  <button class="bg-stone-900 px-2 py-2 w-full rounded text-white font-semibold">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     </div>
   </main>

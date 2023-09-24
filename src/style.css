@@ -1,7 +1,6 @@
 .wallpaper {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
-        url('../images/fredericksocorin.jpg');
+        linear-gradient(rgba(245, 239, 230, 0.7), rgba(245, 239, 230, 0.7), rgba(245, 239, 230, 1));
 
     background-size: cover;
     /* Adjust the background size as needed */
