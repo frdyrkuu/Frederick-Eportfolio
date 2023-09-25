@@ -137,3 +137,42 @@
     scrollbar-width: none;
     /* Firefox */
 }
+
+#pet {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    box-shadow: 0 0 10px lightcoral;
+    filter: blur(5%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 50%;
+    animation: flicker 2s infinite;
+}
+
+.content {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-image: url('firefly.png');
+    background-size: cover;
+    animation: flicker 2s infinite;
+    cursor: none;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}

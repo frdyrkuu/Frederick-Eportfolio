@@ -21,7 +21,11 @@
 </head>
 
 <body class="bg-[#f5efe6] font-['Poppins'] antialiased">
+  <div class="content">
+    <div id="pet" draggable="true"></div>
+  </div>
   <main>
+
     <!-- NAVIGATION HEADER FOR THE LANDING PAGE -->
     <header
       class="bg-[#f5efe6] transition-all duration-700 ease-out rounded-b-3xl sticky top-0 hidden-header z-50 bg-transparent">
@@ -64,25 +68,26 @@
 
     <div id="" class="wallpaper">
       <section class="max-w-7xl mx-auto" id="landing">
-        <div class="flex flex-col justify-center lg:flex-row p-6 items-center">
+        <div class="flex flex-col-reverse justify-center lg:flex-row p-6 items-center">
 
 
-          <article class="sm:w-1/2">
-            <h2 class="text-2xl font-bold mt-20 text-center sm:text-left text-red-700 animate-reveal-x tracking-widest">
+          <article class="sm:w-1/2 px-10">
+            <h2 class="text-2xl font-bold mt-20 text-center lg:text-left text-red-700 animate-reveal-x tracking-widest">
               Hello I am Frederick
             </h2>
             <br>
 
-            <h2 id="writer" class="text-6xl font-bold text-[#2f374f] text-center sm:text-left animate-reveal">
+            <h2 id="writer" class="text-6xl font-bold text-[#2f374f] text-center lg:text-left animate-reveal">
 
             </h2>
-            <h3 class="text-xl font-normal text-[#2f374f] text-center sm:text-left animate-reveal-x">
+            <h3 class="text-xl font-normal text-[#2f374f] text-center lg:text-left animate-reveal-x w-full">
               <br>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, delectus sint at
-              corrupti beatae quasi ut eos molestiae sequi.
+              A dedicated computer engineering graduate proficient in PHP, HTML, JavaScript, and CSS, with
+              experience in web development using Laravel and Tailwind. Additionally, skilled in computer
+              system servicing.
             </h3>
 
-            <div class="flex justify-center sm:justify-start space-x-3 mt-6">
+            <div class="flex justify-center lg:justify-start space-x-3 mt-6">
               <div>
                 <i class="fab fa-github fa-2x" style="color: #b91c1c;"></i>
               </div>
@@ -95,8 +100,8 @@
             </div>
             <br>
           </article>
-          <div class="mt-20 w-1/2 animate-floating">
-            <img src="images/illustration.png" alt="computer-image" class="hidden md:grid">
+          <div class="w-1/2 animate-floating">
+            <img src="images/illustration.png" alt="computer-image" class="hidden lg:grid w-full">
           </div>
         </div>
       </section>
@@ -270,24 +275,27 @@
 
         <!-- CARDS -->
         <div
-          class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14 scrollbar-hide mt-20 mx-auto justify-start sm:justify-center">
+          class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14 scrollbar-hide mt-20 mx-auto">
           <div class="snap-center shrink-0">
             <div class="shrink-0 w-4 sm:w-48"></div>
           </div>
 
           <!-- Card 1 -->
-          <div class="snap-center shrink-0">
-            <div class="max-w-sm rounded-lg shadow bg-red-700">
+          <div class="snap-center shrink-0 hover:scale-105 ease-out duration-700">
+            <div class="max-w-sm rounded-lg shadow-xl bg-[#f5efe6]">
               <a href="https://burger-dungeon.000webhostapp.com/" target="_blank">
-                <img class="rounded-t-lg" src="images/burgerdungeon.png" alt="bruger" />
+                <img class="rounded-t-lg h-80" src="images/burgerdungeonsite.png" alt="bruger" />
               </a>
               <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Burger Dungeon</h5>
-                <p class="mb-3 font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of 2021 so far, in reverse chronological order.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#2f374f]">Burger Dungeon</h5>
+                <p class="mb-3 font-normal text-[#2f374f]">Created "Burger Dungeon" website with CRUD functionality,
+                  Laravel, and Tailwind CSS for
+                  burger branding, user-friendly interface.</p>
+                <br>
+                <br>
                 <a href="https://burger-dungeon.000webhostapp.com/" target="_blank">
                   <button
-                    class="px-3 py-2 bg-stone-800 text-white rounded-lg font-semibold w-full hover:bg-stone-900 hover:ease-in duration-500">View
+                    class="px-3 py-2 bg-red-800 text-white shadow-2xl rounded-lg font-semibold w-full hover:bg-red-900 hover:ease-in duration-500">View
                     Live</button>
                 </a>
               </div>
@@ -296,18 +304,20 @@
           <!-- END Card 1 -->
 
           <!-- Card 2 -->
-          <div class="snap-center shrink-0">
-            <div class="max-w-sm rounded-lg shadow bg-red-700">
+          <div class="snap-center shrink-0 hover:scale-105 ease-out duration-700">
+            <div class="max-w-sm rounded-lg shadow-xl bg-[#f5efe6]">
               <a href="https://acs-protech.com/" target="_blank">
-                <img class="rounded-t-lg" src="images/acsprotech.png" alt="acs" />
+                <img class="rounded-t-lg h-80" src="images/ACSsite.png" alt="ACS" />
               </a>
               <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">ACS Protech</h5>
-                <p class="mb-3 font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of 2021 so far, in reverse chronological order.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#2f374f]">ACS Protech</h5>
+                <p class="mb-3 font-normal text-[#2f374f]">Collaborated with PUP Electrical Engineering students, a web
+                  app for electrical consumption analysis. Designed with Laravel, Tailwind CSS, and Chart.js, enabling
+                  users to calculate electrical consumption.
+                </p>
                 <a href="https://acs-protech.com/" target="_blank">
                   <button
-                    class="px-3 py-2 bg-stone-800 text-white rounded-lg font-semibold w-full hover:bg-stone-900 hover:ease-in duration-500">View
+                    class="px-3 py-2 bg-red-800 text-white shadow-2xl rounded-lg font-semibold w-full hover:bg-red-900 hover:ease-in duration-500">View
                     Live</button>
                 </a>
               </div>
@@ -317,18 +327,20 @@
 
 
           <!-- Card 3 -->
-          <div class="snap-center shrink-0">
-            <div class="max-w-sm rounded-lg shadow bg-red-700">
+          <div class="snap-center shrink-0 hover:scale-105 ease-out duration-700">
+            <div class="max-w-sm rounded-lg shadow-xl bg-[#f5efe6]">
               <a href="https://faultcalculator.tech/" target="_blank">
-                <img class="rounded-t-lg" src="images/three phase.png" alt="acs" />
+                <img class="rounded-t-lg h-80" src="images/threephasesite.png" alt="3phase" />
               </a>
               <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fault Calculator</h5>
-                <p class="mb-3 font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of 2021 so far, in reverse chronological order.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#2f374f]">Fault Calculator</h5>
+                <p class="mb-3 font-normal text-[#2f374f]">Developed Three Phase Calculator for real-time short circuit
+                  analysis in circuit breakers. User-friendly interface at (faultcalculator.tech). Extensive
+                  collaboration with PUP Electrical
+                  Engineering students.</p>
                 <a href="https://faultcalculator.tech/" target="_blank">
                   <button
-                    class="px-3 py-2 bg-stone-800 text-white rounded-lg font-semibold w-full hover:bg-stone-900 hover:ease-in duration-500">View
+                    class="px-3 py-2 bg-red-800 text-white shadow-2xl rounded-lg font-semibold w-full hover:bg-red-900 hover:ease-in duration-500">View
                     Live</button>
                 </a>
               </div>
@@ -337,19 +349,20 @@
           <!-- END Card 3 -->
 
           <!-- Card 4 -->
-          <div class="snap-center shrink-0">
-            <div class="max-w-sm rounded-lg shadow bg-red-700">
-              <a href="/">
-                <img class="rounded-t-lg" src="images/frederick.png" alt="acs" />
+          <div class="snap-center shrink-0 hover:scale-105 ease-out duration-700">
+            <div class="max-w-sm rounded-lg shadow-xl bg-[#f5efe6]">
+              <a href="#" target="_blank">
+                <img class="rounded-t-lg h-80" src="images/frdyrkuu.png" alt="fred" />
               </a>
               <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Frederick Portfolio
-                </h5>
-                <p class="mb-3 font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of 2021 so far, in reverse chronological order.</p>
-                <a href="/">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#2f374f]">Frederick Portfolio</h5>
+                <p class="mb-3 font-normal text-[#2f374f]">A dedicated computer engineering graduate proficient in PHP,
+                  HTML, JavaScript, and CSS, with
+                  experience in web development using Laravel and Tailwind. Additionally, skilled in computer
+                  system servicing.</p>
+                <a href="#" target="_blank">
                   <button
-                    class="px-3 py-2 bg-stone-800 text-white rounded-lg font-semibold w-full hover:bg-stone-900 hover:ease-in duration-500">View
+                    class="px-3 py-2 bg-red-800 text-white shadow-2xl rounded-lg font-semibold w-full hover:bg-red-900 hover:ease-in duration-500">View
                     Live</button>
                 </a>
               </div>
@@ -432,22 +445,42 @@
         </div>
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#b91c1c" fill-opacity="1"
+        <path fill="#1c1917" fill-opacity="1"
           d="M0,224L40,213.3C80,203,160,181,240,186.7C320,192,400,224,480,224C560,224,640,192,720,181.3C800,171,880,181,960,202.7C1040,224,1120,256,1200,261.3C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
         </path>
       </svg>
     </div>
 
-    <footer class="bg-red-700 h-80">
-      <div>
-
+    <footer class="bg-stone-900">
+      <div class="w-full max-w-screen-xl mx-auto md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+            <img src="images/fredericklogo.png" class="h-20 mr-3" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Frederick</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+            <li>
+              <a href="#skills" class="mr-4 hover:underline md:mr-6">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="mr-4 hover:underline md:mr-6 ">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-white sm:text-center">© 2023 <a href="#" class="hover:underline">Frederick™</a>.
+          All Rights Reserved.</span>
       </div>
+
     </footer>
   </main>
 
   <script src="js/text-typing-animation.js"></script>
   <script src="js/header-hide.js"></script>
-
+  <script src="js/cursor.js"></script>
 </body>
 
 </html>
